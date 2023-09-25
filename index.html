@@ -1,44 +1,134 @@
-<html>
-<!-- root of DOM -->
-  <head>
-    <title>LOOK FOR THE SIGNS</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUSH</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link the external CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery library for smooth scrolling -->
+</head>
+<body>
+    <header class="header">
+        <img src="30MFF.png" alt="Left Logo" class="logo">
+        <ul class="menu">
+            <!-- Navigation links with anchors to sections -->
+            <li><a href="#home">HOME</a></li> <!-- Links to the Home section -->
+            <li><a href="#explore">EXPLORE</a></li> <!-- Links to the Explore section -->
+            <li><a href="#">WATCH</a></li>
+            <li><a href="#">CAST</a></li>
+            <li><a href="#">GET IN TOUCH</a></li>
+        </ul>
+        <img src="commlab.png" alt="Right Logo" class="logo">
+    </header>
 
-  <body>
-    <!-- All the content of the webpage -->
-    <h1>I am a title :)</h1>
-    <h6>I am a subtitle</h6>
-    <p>I am a paragraph of <b>text</b>.</p>
-    <p>I am another <i>paragraph</i> of text.</p>
+    <section id="home" class="home">
+        <video autoplay loop muted class="video-background">
+            <source src="homepage.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="title">R U S H</h1>
+            <p class="subtitle">Experience the pulse-pounding journey to class, where every second counts!</p>
+            <p class="subtitle">Step into the race against time – 'Rush' unfolds the chaos of campus life!</p>
+            <!-- Watch Now button with a link to the YouTube video (opens in a new tab) -->
+            <a href="https://www.youtube.com/watch?v=uNfMaRlwNEQ&ab_channel=QMNaushad" target="_blank" class="watch-now-button">WATCH NOW</a>
+        </div>
+    </section>
 
-    <ol>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-    </ol>
+    <section id="explore" class="explore">
+        <div class="explore-item">
+            <img src="marathon.gif" alt="Image 1">
+            <div class="explore-text">
+                <h2 class="explore-title">Explore the Story</h2>
+                <p>
+                    "Rush" is a captivating short film that delves into the fast-paced world of time management and the relentless pursuit of making it to class on time. This compelling narrative not only explores the challenges of our daily rush but also serves as a source of inspiration that drove us to create this film. Join us on this journey as we unravel the intricacies of balancing time and responsibilities in a world that never stops moving. "Rush" is more than just a film; it's a reflection of our shared experiences and a motivation to better manage our time in this hectic world.
+                </p>
+                <!-- Learn More button with a link to an external article (opens in a new tab) -->
+                <a href="https://www.simplilearn.com/time-management-skills-article" target="_blank" class="explore-button">Learn More</a>
+            </div>
+        </div>
+        <div class="explore-item">
+            <div class="explore-text">
+                <h2 class="explore-title">Why Watch Rush?</h2>
+                <p>
+                    College life is more than just a series of classes and exams; it's a profound chapter in our journey of self-discovery and growth, and effective time management is the compass that guides us through its exhilarating and transformative terrain. At its core, effective time management in college is about more than just meeting deadlines and attending classes; it's a profound journey into self-discipline, prioritization, and self-discovery.
+                </p>
+                <!-- Learn More button with a link to an external article (opens in a new tab) -->
+                <a href="https://summer.harvard.edu/blog/8-time-management-tips-for-students/" target="_blank" class="explore-button">Learn More</a>
+            </div>
+            <img src="manrun.gif" alt="Image 2">
+        </div>
+        <!-- Add more explore items as needed -->
+    </section>
 
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-    </ul>
+    <section class="watch">
+        <div class="video-container">
+        <!-- Embed your YouTube video here -->
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/uNfMaRlwNEQ?si=UUPsfpGM2qmFT0Au" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
 
-    <!-- generic -->
-    <div id="my-unique-id">
-      a genertic division/block in the <span>page</span>
-    </div>
+    <section class="meet-the-cast">
+        <h2 class="section-title">Meet the Cast</h2>
+        <div class="cast-members">
+            <!-- Cast member 1 -->
+            <div class="cast-member">
+                <div class="cast-image">
+                    <img src="sneheel.jpg" alt="Cast Member 1">
+                </div>
+                <div class="cast-description">
+                    <p>
+                        Sneheel is a senior majoring in CS. He loves playing table tennis and traveling. For this project, he took on the role of directing the sequence, acted out the running parts, and helped with the editing.
+                    </p>
+                </div>
+            </div>
 
-    <!-- links -->
-    <a href="page.html">I am a link to another page</a>
-    <a href="#my-unique-id">internal link</a>
+            <!-- Cast member 2 -->
+            <div class="cast-member">
+                <div class="cast-image">
+                    <img src="qm.jpg" alt="Cast Member 2">
+                </div>
+                <div class="cast-description">
+                    <p>
+                        Naushad is a Junior majoring in Interactive Media. He loves watching football and movies. For "Rush", Naushad arranged the sound and worked to coordinate production.
+                    </p>
+                </div>
+            </div>
 
-    <br/>
-    <!-- images -->
-    <img src="kitty.jpg" alt-text="what is the image of" />
-    <img src="cat-cat-dance.gif" alt-text="what is the image of" />
-    <img src="https://media.istockphoto.com/photos/european-short-haired-cat-picture-id1072769156?k=20&m=1072769156&s=612x612&w=0&h=k6eFXtE7bpEmR2ns5p3qe_KYh098CVLMz4iKm5OuO6Y=" />
-    <!-- image as link -->
-    <a href="http://duckduckgo.com"><img src="kitty.jpg" alt-text="what is the image of" /></a>
+            <!-- Cast member 3 -->
+            <div class="cast-member">
+                <div class="cast-image">
+                    <img src="kash.jpg" alt="Cast Member 3">
+                </div>
+                <div class="cast-description">
+                    <p>
+                        Kash is a senior majoring in CS. He loves playing basketball and working out. He took on the role of walking on the treadmill for a few seconds, and along with the other cast members, he helped out with editing and cleaning up the film.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </body>
+    <section class="get-in-touch">
+        <h2 class="section-title">Let Us Know What You Think</h2>
+        <div class="form-container">
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+            </div>
+            <div class="input-container">
+                <label for="message">Your Thoughts:</label>
+                <textarea id="message" name="message" placeholder="Write your thoughts here"></textarea>
+            </div>
+            <button class="send-button">Send</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Q M Naushadul Islam - 2023 | A Comm Lab Production | Fall 2023</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link the external JavaScript file -->
+
+</body>
 </html>

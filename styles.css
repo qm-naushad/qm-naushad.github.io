@@ -1,0 +1,313 @@
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set Arial as the default font */
+}
+
+/* Header styles */
+.header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px; /* Increase the top and bottom padding to make the menu taller */
+    position: fixed; /* Make the header fixed in its position */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left of the viewport */
+    right: 0; /* Position it at the right of the viewport */
+    z-index: 3; /* Increase the z-index to place it in front of other content */
+}
+
+
+.logo {
+    width: 100px; /* Set the width of your left logo */
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 20px 10px; /* Increase padding to make the menu items taller */
+}
+
+.menu a:hover {
+    color: #ccc;
+}
+
+/* Add a CSS rule for the clicked menu item */
+.menu a.clicked {
+    color: orange;
+}
+
+/* HOME section styles */
+.home {
+    position: relative;
+    height: 100vh; /* Set the height to cover the viewport */
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    z-index: 1; /* Ensure the overlay is on top of the video */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Ensure the content is on top of the overlay */
+}
+
+.title {
+    font-size: 10rem; /* Adjust the font size as needed */
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: orange;
+    margin: 10px 0;
+}
+
+/* WATCH NOW button styles */
+.watch-now-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.watch-now-button:hover {
+    background-color: #ff9900;
+}
+
+
+/* EXPLORE section styles */
+.explore {
+    background-color: #000;
+    color: #fff;
+    padding: 120px 200px; /* Added generous padding/margin */
+}
+
+.explore-item {
+    display: flex;
+    margin-bottom: 30px; /* Added margin between items */
+    align-items: center;
+}
+
+.explore-item img {
+    max-height: 500px; /* Adjust the max height as needed */
+    margin-right: 50px; /* Added space between image and text */
+}
+
+.explore-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.explore-text {
+    flex: 1;
+}
+
+.explore-text p {
+    text-align: left;
+    font-size: 24px;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px; /* Adds rounded corners to the button */
+    margin-top: 30px; /* Adds space between the paragraph and the button */
+    font-weight: bold; /* Make the text bold */
+}
+
+.explore-button:hover {
+    background-color: #ff6600; /* Change color on hover */
+}
+
+/* ... Your existing CSS ... */
+
+/* Third section styles */
+.watch {
+    position: relative;
+    height: 100vh; /* Set the height to cover the viewport */
+    background-color: #000; /* Set background color */
+    padding: 50px; /* Adjust padding to maintain margins */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    color: #fff; /* Text color */
+    text-align: center;
+}
+
+/* Video container styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height:width) for responsive video */
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto; /* Center the video horizontally */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Meet the Cast section styles */
+.meet-the-cast {
+    background-color: #000;
+    padding: 50px; /* Maintain left and right padding */
+    text-align: center;
+    color: #fff; /* Text color */
+}
+
+/* Section title styles */
+.section-title {
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/* Cast members container styles */
+/* Individual cast member styles */
+.cast-member {
+    flex-basis: calc(33.33% - 20px); /* Three evenly spaced boxes with spacing in between */
+    margin: 100px 10px; /* Adjust spacing between boxes */
+    width: 450px; /* Set a fixed width for each box */
+    background-color: #000; /* Box background color */
+    text-align: center;
+    overflow: hidden; /* Hide overflowing content */
+    display: inline-block; /* Display cast members inline */
+    vertical-align: top; /* Align them to the top */
+}
+
+.cast-image img {
+    width: 100%; /* Ensure images fill the container */
+    height: auto; /* Automatically adjust image height */
+    object-fit: cover; /* Zoom into the images from the center */
+    object-position: center; /* Center the zoom */
+}
+
+.cast-description {
+    padding: 10px; /* Add padding to the description */
+    background-color: #000; /* Background color for the description */
+    color: #fff; /* Text color for the description */
+}
+
+/* Get In Touch section styles */
+.get-in-touch {
+    background-color: #000;
+    padding: 50px; /* Maintain left and right padding */
+    text-align: center;
+    color: #fff; /* Text color */
+}
+
+/* Section title styles */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Form container styles */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Input container styles */
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #fff; /* Input background color */
+}
+
+.input-container textarea {
+    height: 100px; /* Adjust the height for the message box */
+}
+
+/* Send button styles (similar to Learn More buttons) */
+.send-button {
+    background-color: orange;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #ff6600; /* Darker orange on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
