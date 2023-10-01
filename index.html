@@ -6,6 +6,11 @@
     <title>RUSH</title>
     <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link the external CSS file -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery library for smooth scrolling -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -36,29 +41,62 @@
     </section>
 
     <section id="explore" class="explore">
-        <div class="explore-item">
-            <img src="marathon.gif" alt="Image 1">
-            <div class="explore-text">
-                <h2 class="explore-title">Explore the Story</h2>
-                <p>
-                    "Rush" is a captivating short film that delves into the fast-paced world of time management and the relentless pursuit of making it to class on time. This compelling narrative not only explores the challenges of our daily rush but also serves as a source of inspiration that drove us to create this film. Join us on this journey as we unravel the intricacies of balancing time and responsibilities in a world that never stops moving. "Rush" is more than just a film; it's a reflection of our shared experiences and a motivation to better manage our time in this hectic world.
-                </p>
-                <!-- Learn More button with a link to an external article (opens in a new tab) -->
-                <a href="https://www.simplilearn.com/time-management-skills-article" target="_blank" class="explore-button">Learn More</a>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active custom-slide">
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="d-block w-100" src="manrun.gif" alt="First slide">
+                </div>
+                <div class="col-md-6">
+                  <div class="carousel-caption">
+                    <h3>What is RUSH about?</h3>
+                    <p>"Rush" is a captivating short film that delves into the fast-paced world of time management and the relentless pursuit of making it to class on time. This compelling narrative not only explores the challenges of our daily rush but also serves as a source of inspiration that drove us to create this film.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="explore-item">
-            <div class="explore-text">
-                <h2 class="explore-title">Why Watch Rush?</h2>
-                <p>
-                    College life is more than just a series of classes and exams; it's a profound chapter in our journey of self-discovery and growth, and effective time management is the compass that guides us through its exhilarating and transformative terrain. At its core, effective time management in college is about more than just meeting deadlines and attending classes; it's a profound journey into self-discipline, prioritization, and self-discovery.
-                </p>
-                <!-- Learn More button with a link to an external article (opens in a new tab) -->
-                <a href="https://summer.harvard.edu/blog/8-time-management-tips-for-students/" target="_blank" class="explore-button">Learn More</a>
+            <div class="carousel-item custom-slide">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="carousel-caption">
+                    <h3>Why we made RUSH</h3>
+                    <p>"Rush" is more than just a film; it's a reflection of our shared experiences and a motivation to better manage our time in this hectic world. It reminds us that in the race of life, we should cherish every moment, for it's the journey that truly defines us, not just the destination. "Rush" inspires us to savor the present and make every second count.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img class="d-block w-100" src="marathon.gif" alt="Second slide">
+                </div> 
+              </div>
             </div>
-            <img src="manrun.gif" alt="Image 2">
+            <div class="carousel-item custom-slide">
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="d-block w-100" src="clock.gif" alt="Third slide">
+                </div>
+                <div class="col-md-6">
+                  <div class="carousel-caption">
+                    <h3>Why watch RUSH?</h3>
+                    <p>College life is more than just a series of classes and exams; it's a profound chapter in our journey of self-discovery and growth, and effective time management is the compass that guides us through its exhilarating and transformative terrain. This film just acts as reminder of that.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <!-- Add more explore items as needed -->
     </section>
 
     <section class="watch">
@@ -71,6 +109,7 @@
     <section class="meet-the-cast">
         <h2 class="section-title">Meet the Cast</h2>
         <div class="cast-members">
+
             <!-- Cast member 1 -->
             <div class="cast-member">
                 <div class="cast-image">
@@ -102,7 +141,7 @@
                 </div>
                 <div class="cast-description">
                     <p>
-                        Kash is a senior majoring in CS. He loves playing basketball and working out. He took on the role of walking on the treadmill for a few seconds, and along with the other cast members, he helped out with editing and cleaning up the film.
+                        Kash is a senior majoring in CS. He loves playing basketball and working out. He took on the role of walking on the treadmill for a few seconds, and along with the other cast members, he helped out with editing.
                     </p>
                 </div>
             </div>
@@ -129,6 +168,7 @@
     </footer>
 
     <script src="script.js"></script> <!-- Link the external JavaScript file -->
+    <script src="/path/to/flickity.pkgd.min.js"></script>
 
 </body>
 </html>

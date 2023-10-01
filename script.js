@@ -43,4 +43,26 @@ document.querySelector('.menu li:nth-child(5) a').addEventListener('click', func
     }, 1000); // Adjust the duration (in milliseconds) as needed
 });
 
+const slides = document.querySelectorAll('.carousel-slide');
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
 
+let activeSlide = 0;
+
+function setActiveSlide(slideIndex) {
+    slides.forEach((slide) => {
+        slide.classList.remove('active');
+    });
+
+    slides[slideIndex].classList.add('active');
+}
+
+nextButton.addEventListener('click', () => {
+    activeSlide = (activeSlide + 1) % slides.length;
+    setActiveSlide(activeSlide);
+});
+
+prevButton.addEventListener('click', () => {
+    activeSlide = (activeSlide - 1 + slides.length) % slides.length;
+    setActiveSlide(activeSlide);
+});

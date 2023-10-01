@@ -2,7 +2,7 @@
 body, h1, p {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Set Arial as the default font */
+    font-family: Chalkduster, fantasy; /* Set the default font */
 }
 
 /* Header styles */
@@ -12,7 +12,7 @@ body, h1, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 25px; /* Increase the top and bottom padding to make the menu taller */
+    padding: 10px 10px; /* Increase the top and bottom padding to make the menu taller */
     position: fixed; /* Make the header fixed in its position */
     top: 0; /* Position it at the top of the viewport */
     left: 0; /* Position it at the left of the viewport */
@@ -22,7 +22,7 @@ body, h1, p {
 
 
 .logo {
-    width: 100px; /* Set the width of your left logo */
+    width: 70px; /* Set the width of your left logo */
     height: auto;
 }
 
@@ -48,7 +48,7 @@ body, h1, p {
 }
 
 .menu a:hover {
-    color: #ccc;
+    color: #FFA500;
 }
 
 /* Add a CSS rule for the clicked menu item */
@@ -92,13 +92,14 @@ body, h1, p {
 }
 
 .title {
+    font-family: Arial Black, sans-serif;
     font-size: 10rem; /* Adjust the font size as needed */
     color: #fff;
     margin-bottom: 20px;
 }
 
 .subtitle {
-    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-size: 1rem; /* Adjust the font size as needed */
     color: orange;
     margin: 10px 0;
 }
@@ -117,56 +118,12 @@ body, h1, p {
 }
 
 .watch-now-button:hover {
-    background-color: #ff9900;
+    background-color: #000000;
 }
 
 
 /* EXPLORE section styles */
-.explore {
-    background-color: #000;
-    color: #fff;
-    padding: 120px 200px; /* Added generous padding/margin */
-}
 
-.explore-item {
-    display: flex;
-    margin-bottom: 30px; /* Added margin between items */
-    align-items: center;
-}
-
-.explore-item img {
-    max-height: 500px; /* Adjust the max height as needed */
-    margin-right: 50px; /* Added space between image and text */
-}
-
-.explore-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.explore-text {
-    flex: 1;
-}
-
-.explore-text p {
-    text-align: left;
-    font-size: 24px;
-}
-
-.explore-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: orange;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 20px; /* Adds rounded corners to the button */
-    margin-top: 30px; /* Adds space between the paragraph and the button */
-    font-weight: bold; /* Make the text bold */
-}
-
-.explore-button:hover {
-    background-color: #ff6600; /* Change color on hover */
-}
 
 /* ... Your existing CSS ... */
 
@@ -216,9 +173,10 @@ body, h1, p {
 /* Cast members container styles */
 /* Individual cast member styles */
 .cast-member {
+    font-size: 13px;
     flex-basis: calc(33.33% - 20px); /* Three evenly spaced boxes with spacing in between */
-    margin: 100px 10px; /* Adjust spacing between boxes */
-    width: 450px; /* Set a fixed width for each box */
+    margin: 20px 30px; /* Adjust spacing between boxes */
+    width: 40vh; /* Set a fixed width for each box */
     background-color: #000; /* Box background color */
     text-align: center;
     overflow: hidden; /* Hide overflowing content */
@@ -234,7 +192,7 @@ body, h1, p {
 }
 
 .cast-description {
-    padding: 10px; /* Add padding to the description */
+    padding: 20px; /* Add padding to the description */
     background-color: #000; /* Background color for the description */
     color: #fff; /* Text color for the description */
 }
@@ -305,6 +263,74 @@ body, h1, p {
     text-align: center;
     color: #fff;
     padding: 20px 0;
+}
+
+
+
+
+
+
+/* Custom CSS to make the background black for carousel items */
+.custom-slide {
+  background-color: black;
+  color: white; /* Set text color to white for better visibility on a black background */
+}
+
+/* Custom CSS to set the image height to 100% of the viewport height */
+.carousel-inner .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Custom CSS for slide titles */
+.carousel-caption h3 {
+  font-size: 28px;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+/* Custom CSS for slide descriptions */
+.carousel-caption p {
+  font-size: 18px;
+  margin-bottom: 180px;
+  line-height: 35px;
+}
+
+/* Custom CSS for adjusting spacing between image and text */
+.carousel-item .row {
+  margin-bottom: 10px;
+  row-gap: 100000px;
+}
+
+/* Custom CSS for text alignment */
+.carousel-caption {
+  text-align: left; /* Adjust text alignment to left */
+  margin-right: 100px;
+  margin-left: 20px;
+}
+
+/* Custom CSS to make the background black for carousel items */
+.custom-slide {
+  background-color: black;
+  color: white; /* Set text color to white for better visibility on a black background */
+}
+
+/* Custom CSS to decrease the gap between image and paragraph in the carousel caption */
+.carousel-item .carousel-caption {
+  padding-bottom: 10px; /* Adjust the padding as needed */
+}
+
+/* Custom CSS for image styles */
+.carousel-item img {
+    transform: scale(0.7);
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* Custom CSS to make the carousel navigation arrows bigger */
+.carousel-control-prev,
+.carousel-control-next {
+  font-size: 20rem; /* Adjust the font size to make the arrows bigger */
 }
 
 .footer p {
