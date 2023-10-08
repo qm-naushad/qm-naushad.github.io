@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dayChicago {
+    background-image: url('slide1.png');
+}
+
+#sunsetChicago {
+    background-image: url('slide2.png');
+}
+
+#nightChicago {
+    background-image: url('slide3.png');
+}
+
+#interlude {
+    background-image: url('slide4.png');
+}
+
+#dayShanghai {
+    background-image: url('slide5.png');
+}
+
+#sunsetShanghai {
+    background-image: url('slide6.png');
+}
+
+#nightShanghai {
+    background-image: url('slide7.png');
+}
+
+#theend {
+    background-image: url('slide8.png');
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
