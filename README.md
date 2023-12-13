@@ -6,7 +6,7 @@ Welcome to the documentation of [QM Naushad's Portfolio](https://qm-naushad.gith
 
 - **Theme**: The website embraces a dark theme, reflecting my personal vibe and preference for a sleek, modern look.
 - **Layout**: Intuitive and user-friendly, ensuring easy navigation through sections like 'Home', 'Skills', 'Projects', and 'Interests'.
-- **Typography and Color Scheme**: Carefully selected to complement the dark theme, enhancing readability and visual appeal.
+- **Typography and Color Scheme**: Carefully selected to complement the dark theme, enhancing visual appeal.
 
 ## Sections Overview
 
